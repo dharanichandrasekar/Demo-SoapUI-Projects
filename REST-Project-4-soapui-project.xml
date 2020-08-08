@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="0ad0a7d2-8092-4c1b-aad5-d9b316cef8de" activeEnvironment="Default environment" name="REST Project 4" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" encryptionMode="Not encrypted" updated="2.8.2 2019-08-27T17:04:01Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="114d42ff-6bfb-4300-83a1-6cbf9ed369c1" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://restcountries.eu" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints>
+      <con:endpoint>https://restcountries.eu</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Aruba" path="/rest/v2/name/aruba" id="58b496a9-cd4f-42dc-a9a9-cd86ee777e22">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>fullText</con:name>
+          <con:value>true</con:value>
+          <con:style>QUERY</con:style>
+          <con:default>true</con:default>
+          <con:path xsi:nil="true"/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Aruba 1" id="63ca7992-34fc-4d80-b5e2-b49e8c7499a2" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json;charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="f411ef23-53c3-45cb-8844-f8b52f3c247f" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://restcountries.eu</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="fullText" value="true" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>fullText</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="99b24bf6-8dc2-4f6e-9938-37c9b07354e8" name="TestSuite1">
+    <con:description>TestSuite generated for REST Service [https://restcountries.eu]</con:description>
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="5d9dc93e-7084-4eba-a78e-d2e90cd822a8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Aruba TestCase" searchProperties="true">
+      <con:description>TestCase generated for REST Resource [Aruba] located at [/rest/v2/name/aruba]</con:description>
+      <con:settings/>
+      <con:testStep type="restrequest" name="Request 1" id="9a6eb24d-cdf8-4971-a3fd-e9c8e9dd5ec0">
+        <con:settings/>
+        <con:config service="https://restcountries.eu" resourcePath="/rest/v2/name/aruba" methodName="Aruba 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Request 1" id="f411ef23-53c3-45cb-8844-f8b52f3c247f" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://restcountries.eu</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://restcountries.eu/rest/v2/name/aruba</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="fullText" value="true" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>fullText</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9c455a2d-eb9d-4cea-91d7-e16955d0ce3f" activeEnvironment="Default environment" name="REST Project 7" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" encryptionMode="Not encrypted" updated="2.8.2 2019-08-27T17:04:01Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="687426ec-c784-4e1d-826b-b8c62658cfd4" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://restcountries.eu" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints>
+      <con:endpoint>https://restcountries.eu</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Co" path="/rest/v2/alpha/co" id="a751520e-ee13-4714-9370-cce29ef5481e">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Co 1" id="c1412865-823b-482e-b451-76badbbf91fd" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="b84c0172-b26d-4758-9edc-0b7515378988" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://restcountries.eu</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="14842a04-b9c2-42a4-8284-a9fc271b9f05" name="TestSuite1">
+    <con:description>TestSuite generated for REST Service [https://restcountries.eu]</con:description>
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="7cd83a61-8296-4ff6-aa6f-81c5f41e8ad9" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Co TestCase" searchProperties="true">
+      <con:description>TestCase generated for REST Resource [Co] located at [/rest/v2/alpha/co]</con:description>
+      <con:settings/>
+      <con:testStep type="restrequest" name="Request 1" id="b1db378b-9a9c-433b-8f75-752d88230cdd">
+        <con:settings/>
+        <con:config service="https://restcountries.eu" resourcePath="/rest/v2/alpha/co" methodName="Co 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Request 1" id="b84c0172-b26d-4758-9edc-0b7515378988" mediaType="application/json">
+            <con:settings/>
+            <con:endpoint>https://restcountries.eu</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://restcountries.eu/rest/v2/alpha/co</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>

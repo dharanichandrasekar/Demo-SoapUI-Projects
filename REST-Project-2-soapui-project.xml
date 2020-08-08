@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="4b09042c-0824-4aa9-a7ae-51f56d3dcb5d" activeEnvironment="Default" name="REST Project 2" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="16758fa6-3999-419a-9450-233e6fd839e9" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://restcountries.eu" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints>
+      <con:endpoint>https://restcountries.eu</con:endpoint>
+    </con:endpoints>
+    <con:resource name="United" path="/rest/v2/name/united" id="21aef2bc-4fa3-4cf7-8400-9127756fbe4b">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="United 1" id="17ec67ad-45a4-4e33-ab82-cbb47b147e1e" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="21c36555-7903-4299-8681-1c1c56d08040" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://restcountries.eu</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+</con:soapui-project>
